@@ -1,0 +1,13 @@
+import math
+
+a=float(input("???" ))
+b=float(input("???" ))
+h=float(input("???" ))
+x=a
+y = int(b)
+
+while x<=b:
+    x=round(x,2)
+    y= 0.4+ math.cos(x)+ math.e ** (3.27+x)
+    print('|', x, '| ', y)
+    x+=h

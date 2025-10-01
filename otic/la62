@@ -1,0 +1,59 @@
+def molar_mass(element, atomic_num):
+    if element == "Fe":
+        atomic_mass = 55.845
+    elif element == "O":
+        atomic_mass = 15.999
+    
+    molar_mass = atomic_mass * atomic_num
+    print(f"Molar mass {round(molar_mass),1} g/mol")
+
+element = input("???   ")
+atomic_mass= int(input("???   "))
+molar_mass(element, atomic_mass)
+
+def get_nucleus_charge(element):
+    if element == "H":
+        print(1)
+    elif element == "He":
+        print(2)
+    elif element == "Li":
+        print(3)
+    elif element == "Be":
+        print(4)
+    elif element == "B":
+        print(5)
+    elif element == "C":
+        print(6)
+    elif element == "N":
+        print(7)
+    elif element == "O":
+        print(8)
+    elif element == "F":
+        print(9)
+    elif element == "Ne":
+        print(10)
+    elif element == "Na":
+        print(11)
+    elif element == "Mg":
+        print(12)
+    elif element == "Al":
+        print(13)
+    elif element == "Si":
+        print(14)
+    elif element == "P":
+        print(15)
+    elif element == "S":
+        print(16)
+    elif element == "Cl":
+        print(17)
+    elif element == "Ar":
+        print(18)
+    elif element == "K":
+        print(19)
+    elif element == "Ca":
+        print(20)
+    else:
+        print("Error")
+    
+element = input("???")
+get_nucleus_charge(element)

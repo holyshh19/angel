@@ -1,0 +1,17 @@
+import math
+
+a=float(input("??? "))
+b=float(input("??? "))
+h=float(input("??? "))
+y = int(b)
+x=a
+
+for i in range(y):
+        x=round(x,2)
+        y= math.cos(x) / math.sin(x)+0.6 * math.cos(2*x)+math.sqrt(x)
+        if x>=b:
+                break
+        x+=h    
+
+y=(y,2)
+print(i, '|', x, '| ', y)

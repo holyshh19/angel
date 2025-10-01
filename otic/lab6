@@ -1,0 +1,28 @@
+import math
+
+def side1(b, a, A_deg, B_deg):
+    A_rad = math.radians(A_deg)
+    B_rad = math.radians(B_deg)
+
+    if math.sin(A_rad) == 0:
+        return "Error"
+    b = (a * math.sin(B_rad)) / math.sin(A_rad)
+    return b
+
+def side2 (c,a,b,C_deg):
+    C_rad=math.radians(C_deg)
+    c_squared = a**2 + b**2 - 2*a*b*math.cos(C_rad)
+    c=math.sqrt(c_squared)
+    if c ** 2<0:
+        return "Error"
+    return c
+
+a=float(input("??? "))
+b=float(input("??? "))
+c=float(input("??? "))
+A_rad=float(input("??? "))
+B_rad=float(input("??? "))
+C_rad=float(input("??? "))
+
+print(round(side1(b,a,A_rad,B_rad)))
+print(round(side2(c,a,b,C_rad)))

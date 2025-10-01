@@ -1,0 +1,15 @@
+num=int(input("??? "))
+
+a=num//1000
+b=(num//100)%10
+c=(num//10)%10
+d=num%10
+
+new_num=c*1000+d*100+a*10+b
+print(new_num)
+
+x1=new_num//1000
+x2=(new_num//100)%10
+x3=(new_num//10)%10
+x4=new_num%10
+print(x1**2, x2**2,x3**2,x4**2)

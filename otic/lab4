@@ -1,0 +1,36 @@
+num=int(input("??? "))
+
+a=num//100
+b=(num//10)%10
+c=num%10
+
+if a <= b and a <= c:
+        min_digit = a
+        if b <= c:
+            mid_digit = b
+            max_digit = c
+        else:
+            mid_digit = c
+            max_digit = b
+elif b <= a and b <= c:
+        min_digit = b
+        if a <= c:
+            mid_digit = a
+            max_digit = c
+        else:
+            mid_digit = c
+            max_digit = a
+else:
+        min_digit = c
+        if a <= b:
+            mid_digit = a
+            max_digit = b
+        else:
+            mid_digit = b
+            max_digit = a
+
+ascending = min_digit * 100 + mid_digit * 10 + max_digit
+descending = max_digit * 100 + mid_digit * 10 + min_digit
+
+print("Зростання:", ascending)
+print("Спадання:", descending)
